@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Login/css/WeatherMain.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="main-con">
+      <!-- 홈페이지 헤더 영역-->
+      <header class="header-con">
+        <h1><span>ICE</span>TIP</h1>
+        <div class="header-main">
+          <nav>
+            <ul>
+              <li>News</li>
+              <li>Story</li>
+              <li>Recipe</li>
+              <li>DashBoard</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-nav">
+          <nav>
+            <ul>
+              <li>이벤트</li>
+              <li>공지사항</li>
+              <li>로그인</li>
+            </ul>
+          </nav>
+          <div class="header-nav-hambuger">
+            <div class="header-nav-bar"></div>
+            <div class="header-nav-bar"></div>
+            <div class="header-nav-bar"></div>
+            <div class="hedaer-nav-bar-content-box">
+              <div class="header-nav-bar-content-box-triangle"></div>
+              <div class="header-nav-bar-content">
+                <div>
+                  <span>이벤트</span>
+                  <span>공지사항</span>
+                </div>
+                <div>
+                  <span> 로그인 </span>
+                  <span> 도움말 </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- 메인 이미지 표현 영역-->
+        <div class="img-con">
+          <div class="img-box">
+            <img src="/Login/img/spring.jpg" />
+            <div class="slogan-wrap">
+              <div class="slogan-item">
+                "따뜻한 봄바람과 함께 피어나는 희망의 계절."
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="/Login/img/summer.jpg" />
+            <div class="slogan-wrap">
+              <div class="slogan-item">"뜨거운 햇살, 여름의 열기와 함께."</div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="/Login/img/autumn.jpg" />
+            <div class="slogan-wrap">
+              <div class="slogan-item">
+                "단풍잎이 춤추는 가을, 마음의 정적을 찾다."
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="/Login/img/winter.jpg" />
+            <div class="slogan-wrap">
+              <div class="slogan-item">
+                "하얀 눈이 내리면, 평화로운 겨울이 찾아온다."
+              </div>
+            </div>
+          </div>
+          <!-- 메인 이미지 닷(점)박스 영역-->
+          <div class="dot-box">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <!--계절 이벤트 배너, 이벤트 배너, 뉴스 영역-->
+        <div class="weather-notice">
+          <div class="notice-banner-wrap">
+            <div class="img-banner">
+              <div class="img-wrap">
+                <img src="/Login/img/swiper-spring.jpg" />
+                <img src="/Login/img/swiper-water.jpg" />
+                <img src="/Login/img/swiper-autumn.jpg" />
+                <img src="/Login/img/swiper-winter.jpg" />
+              </div>
+              <div class="img-banner-btn-wrap">
+                <div class="banner-prev-btn prev">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-caret-left-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
+                    />
+                  </svg>
+                </div>
+                <div class="banner-next-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-caret-right-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="event-banner">
+              <div class="event-title">
+                <h1>이벤트 일정</h1>
+              </div>
+              <div class="event-content-wrap"></div>
+            </div>
+          </div>
+          <div class="weather-news-con">
+            <div class="weather-news-wrap">
+              <div class="weather-news-box">
+                <div class="weather-news-move-box"></div>
+                <div class="news-title">
+                  <div>
+                    <h2><strong>SN NEWS</strong></h2>
+                    <span>계절뉴스</span>
+                  </div>
+                  <div class="news-plus">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      fill="currentColor"
+                      class="bi bi-plus-lg"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="news-btn">
+                  <div class="news-prev-btn prev">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      fill="currentColor"
+                      class="bi bi-chevron-left"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="news-next-btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      fill="currentColor"
+                      class="bi bi-chevron-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="news-dot-box">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="weather-news-sub-con">
+                <div class="weather-news-sub-wrap"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="weather-introd">
+          <div class="introd-con">
+            <div class="introd-title">
+              <h1><strong>Season-Story</strong></h1>
+              <h2>
+                <strong
+                  >계절의 이야기를 듣고 싶다면, 카드를 클릭해주세요!</strong
+                >
+              </h2>
+            </div>
+
+            <div class="introd-story-card-wrap">
+              <div>
+                <div class="card-circle">
+                  <h2>Spring</h2>
+                </div>
+                <div class="card-content-box">
+                  <div>
+                    새로운 시작과 활기찬 에너지를 느낄 수 있는 봄! 싱그러운 봄
+                    햇살 아래에서 자연의 새로운 생명력을 느껴보세요.
+                  </div>
+                </div>
+                <button>Learn-More</button>
+              </div>
+              <div>
+                <div class="card-circle">
+                  <h2>Summer</h2>
+                </div>
+                <div class="card-content-box">
+                  <div>
+                    여름이 오면 열정과 활기가 넘치는 계절이 찾아옵니다! 햇빛
+                    아래에서 더위를 타고 여름의 끝없는 에너지를 느껴보세요.
+                  </div>
+                </div>
+                <button>Learn-More</button>
+              </div>
+              <div>
+                <div class="card-circle">
+                  <h2>Autumn</h2>
+                </div>
+                <div class="card-content-box">
+                  <div>
+                    단풍이 빛나는 가을, 자연이 선사하는 황금빛 아름다움을
+                    만끽하세요. 가을은 차분하고 우아한 분위기를 선사합니다.
+                  </div>
+                </div>
+                <button>Learn-More</button>
+              </div>
+              <div>
+                <div class="card-circle">
+                  <h2>Winter</h2>
+                </div>
+                <div class="card-content-box">
+                  <div>
+                    흰 눈이 내리고 찬 바람이 부는 겨울, 아늑한 온기와 함께
+                    따뜻한 차를 마시며 겨울의 매력을 즐겨보세요.
+                  </div>
+                </div>
+                <button>Learn-More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="season-recipe-food">
+          <div class="recipe-wrap">
+            <div class="recipe-title">
+              <h1>Season <span>Recipes</span></h1>
+            </div>
+            <div class="recipe-category">
+              <span class="category-active">봄</span>
+              <span>여름</span>
+              <span>가을</span>
+              <span>겨울</span>
+            </div>
+            <div class="recipe-item-box">
+              <div class="recipe-item-move-box">
+                <div class="recipe-spring-box">
+                  <div class="recipe-item-first-line">
+                    <div class="recipe-item">
+                      <img
+                        src="https://recipe1.ezmember.co.kr/cache/recipe/2015/09/30/23f8658a8eca5e2ac613a1d8988f9f1e.jpg"
+                      />
+                      <div class="recipe-content-box">
+                        <div class="recipe-star-box">
+                          <div class="recipe-star-fill">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="recipe-star-base">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <span class="rcipe-content">스트로베리 샐러드</span>
+                        <div class="recipe-like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="21"
+                            fill="currentColor"
+                            class="bi bi-bookmark-heart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"
+                            />
+                            <path
+                              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                            />
+                          </svg>
+                          <span class="recipe-like-number">7</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="recipe-item">
+                      <img
+                        src="https://recipe1.ezmember.co.kr/cache/recipe/2021/09/01/0d946a318cf2b7559b55948aa7b9cb2f1.jpg"
+                      />
+                      <div class="recipe-content-box">
+                        <div class="recipe-star-box">
+                          <div class="recipe-star-fill">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="recipe-star-base">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <span class="rcipe-content">아스파라거스 그라탕</span>
+                        <div class="recipe-like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="21"
+                            fill="currentColor"
+                            class="bi bi-bookmark-heart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"
+                            />
+                            <path
+                              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                            />
+                          </svg>
+                          <span class="recipe-like-number">7</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="recipe-item">
+                      <img
+                        src="https://recipe1.ezmember.co.kr/cache/recipe/2016/03/28/03f9dfe7f86e914b3ec3f07202a7f10e1.jpg"
+                      />
+                      <div class="recipe-content-box">
+                        <div class="recipe-star-box">
+                          <div class="recipe-star-fill">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="recipe-star-base">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <span class="rcipe-content">새싹 샐러드</span>
+                        <div class="recipe-like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="21"
+                            fill="currentColor"
+                            class="bi bi-bookmark-heart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"
+                            />
+                            <path
+                              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                            />
+                          </svg>
+                          <span class="recipe-like-number">7</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="recipe-item-second-line">
+                    <div class="recipe-item">
+                      <img
+                        src="https://previews.123rf.com/images/regenbogen/regenbogen1707/regenbogen170700068/82433310-%EB%AF%BC%ED%8A%B8%EC%99%80-%EC%8B%A0%EC%84%A0%ED%95%9C-%EA%B5%AC%EC%9A%B4-%EB%90%9C-%EC%82%B4%EA%B5%AC-%ED%8C%8C%EC%9D%B4%EC%9E%85%EB%8B%88%EB%8B%A4-%EC%96%95%EC%9D%80-dof.jpg"
+                      />
+                      <div class="recipe-content-box">
+                        <div class="recipe-star-box">
+                          <div class="recipe-star-fill">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="recipe-star-base">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <span class="rcipe-content">살구 파이</span>
+                        <div class="recipe-like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="21"
+                            fill="currentColor"
+                            class="bi bi-bookmark-heart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"
+                            />
+                            <path
+                              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                            />
+                          </svg>
+                          <span class="recipe-like-number">7</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="recipe-item">
+                      <img
+                        src="https://recipe1.ezmember.co.kr/cache/recipe/2017/10/03/4776146f313b949313945ab4e16e85121.jpg"
+                      />
+                      <div class="recipe-content-box">
+                        <div class="recipe-star-box">
+                          <div class="recipe-star-fill">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="recipe-star-base">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <span class="rcipe-content">레몬 타르트</span>
+                        <div class="recipe-like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="21"
+                            fill="currentColor"
+                            class="bi bi-bookmark-heart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"
+                            />
+                            <path
+                              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                            />
+                          </svg>
+                          <span class="recipe-like-number">7</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="recipe-item">
+                      <img
+                        src="https://recipe1.ezmember.co.kr/cache/recipe/2018/02/12/25465cc83975f462aa649bddccb261be1.jpg"
+                      />
+                      <div class="recipe-content-box">
+                        <div class="recipe-star-box">
+                          <div class="recipe-star-fill">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="recipe-star-base">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <span class="rcipe-content">아보카도 토스트</span>
+                        <div class="recipe-like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="21"
+                            fill="currentColor"
+                            class="bi bi-bookmark-heart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"
+                            />
+                            <path
+                              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                            />
+                          </svg>
+                          <span class="recipe-like-number">7</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="recipe-summer-box">
+                  <div class="recipe-item-first-line">
+                    <div class="recipe-item">
+                      <img
+                        src="https://recipe1.ezmember.co.kr/cache/recipe/2015/11/05/8f4f7d0da35466b3f9543bd31f856fdb1.jpg"
+                      />
+                      <div class="recipe-content-box">
+                        <div class="recipe-star-box">
+                          <div class="recipe-star-fill">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="recipe-star-base">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <span class="rcipe-content">그리스 샐러드</span>
+                        <div class="recipe-like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="21"
+                            fill="currentColor"
+                            class="bi bi-bookmark-heart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"
+                            />
+                            <path
+                              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                            />
+                          </svg>
+                          <span class="recipe-like-number">7</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="recipe-item">
+                      <img
+                        src="https://recipe1.ezmember.co.kr/cache/recipe/2015/11/06/6323f61c3d27fa9e6ad50f4c25efafe21.jpg"
+                      />
+                      <div class="recipe-content-box">
+                        <div class="recipe-star-box">
+                          <div class="recipe-star-fill">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="recipe-star-base">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <span class="rcipe-content">바베큐</span>
+                        <div class="recipe-like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="21"
+                            fill="currentColor"
+                            class="bi bi-bookmark-heart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"
+                            />
+                            <path
+                              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                            />
+                          </svg>
+                          <span class="recipe-like-number">7</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="recipe-item">
+                      <img
+                        src="https://mblogthumb-phinf.pstatic.net/MjAyMzA2MDFfMTIz/MDAxNjg1NTQ4NDc0NjQy.uW-1YnQAlt1H_Ed-xv7yK7TgpQAYD84-3R3GSulKEFQg.7U9W1ff1BqofmZGmYZdpnusE596Q6R9Ex_Z_FvAWBqUg.JPEG.naipo000/SE-503984db-d3a2-4217-848a-9fbb9a154233.jpg?type=w800"
+                      />
+                      <div class="recipe-content-box">
+                        <div class="recipe-star-box">
+                          <div class="recipe-star-fill">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="recipe-star-base">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <span class="rcipe-content">토마토 스파게티</span>
+                        <div class="recipe-like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="21"
+                            fill="currentColor"
+                            class="bi bi-bookmark-heart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"
+                            />
+                            <path
+                              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                            />
+                          </svg>
+                          <span class="recipe-like-number">7</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="recipe-item-second-line">
+                    <div class="recipe-item">
+                      <img
+                        src="https://recipe1.ezmember.co.kr/cache/recipe/2017/08/09/602cde9c30d57b6637fa35b454a17a761.jpg"
+                      />
+                      <div class="recipe-content-box">
+                        <div class="recipe-star-box">
+                          <div class="recipe-star-fill">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="recipe-star-base">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <span class="rcipe-content">멜론 주스</span>
+                        <div class="recipe-like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="21"
+                            fill="currentColor"
+                            class="bi bi-bookmark-heart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"
+                            />
+                            <path
+                              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                            />
+                          </svg>
+                          <span class="recipe-like-number">7</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="recipe-item">
+                      <img
+                        src="data:image/jpeg;base64,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"
+                      />
+                      <div class="recipe-content-box">
+                        <div class="recipe-star-box">
+                          <div class="recipe-star-fill">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="recipe-star-base">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <span class="rcipe-content">타코</span>
+                        <div class="recipe-like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="21"
+                            fill="currentColor"
+                            class="bi bi-bookmark-heart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"
+                            />
+                            <path
+                              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                            />
+                          </svg>
+                          <span class="recipe-like-number">7</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="recipe-item">
+                      <img
+                        src="https://recipe1.ezmember.co.kr/cache/recipe/2019/04/19/584aa04defa84bd7a91d907ba0e99d6e1.jpg"
+                      />
+                      <div class="recipe-content-box">
+                        <div class="recipe-star-box">
+                          <div class="recipe-star-fill">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="recipe-star-base">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <span class="rcipe-content">망고 스무디</span>
+                        <div class="recipe-like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="21"
+                            fill="currentColor"
+                            class="bi bi-bookmark-heart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"
+                            />
+                            <path
+                              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                            />
+                          </svg>
+                          <span class="recipe-like-number">7</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="recipe-autumn-box">
+                  <div class="recipe-item-first-line">
+                    <div class="recipe-item">
+                      <img
+                        src="https://recipe1.ezmember.co.kr/cache/recipe/2015/08/07/3962e5003c06cce0ed1c01d2886f30b61.jpg"
+                      />
+                      <div class="recipe-content-box">
+                        <div class="recipe-star-box">
+                          <div class="recipe-star-fill">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="recipe-star-base">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <span class="rcipe-content">단호박 스무디</span>
+                        <div class="recipe-like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="21"
+                            fill="currentColor"
+                            class="bi bi-bookmark-heart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"
+                            />
+                            <path
+                              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                            />
+                          </svg>
+                          <span class="recipe-like-number">7</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="recipe-item">
+                      <img
+                        src="https://recipe1.ezmember.co.kr/cache/recipe/2015/04/08/fb21c0d7f37999973357b539ec6821b01.jpg"
+                      />
+                      <div class="recipe-content-box">
+                        <div class="recipe-star-box">
+                          <div class="recipe-star-fill">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="recipe-star-base">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <span class="rcipe-content">단호박 리조또</span>
+                        <div class="recipe-like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="21"
+                            fill="currentColor"
+                            class="bi bi-bookmark-heart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"
+                            />
+                            <path
+                              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                            />
+                          </svg>
+                          <span class="recipe-like-number">7</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="recipe-item">
+                      <img
+                        src="https://recipe1.ezmember.co.kr/cache/recipe/2019/01/31/a2465af21645699a80b721ab9100bf921.jpg"
+                      />
+                      <div class="recipe-content-box">
+                        <div class="recipe-star-box">
+                          <div class="recipe-star-fill">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="recipe-star-base">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <span class="rcipe-content">애플 파이</span>
+                        <div class="recipe-like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="21"
+                            fill="currentColor"
+                            class="bi bi-bookmark-heart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"
+                            />
+                            <path
+                              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                            />
+                          </svg>
+                          <span class="recipe-like-number">7</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="recipe-item-second-line">
+                    <div class="recipe-item">
+                      <img
+                        src="https://recipe1.ezmember.co.kr/cache/recipe/2016/12/19/64f70311042c29d4a882c5187dfab63c1.jpg"
+                      />
+                      <div class="recipe-content-box">
+                        <div class="recipe-star-box">
+                          <div class="recipe-star-fill">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="recipe-star-base">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <span class="rcipe-content">감자탕</span>
+                        <div class="recipe-like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="21"
+                            fill="currentColor"
+                            class="bi bi-bookmark-heart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"
+                            />
+                            <path
+                              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                            />
+                          </svg>
+                          <span class="recipe-like-number">7</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="recipe-item">
+                      <img
+                        src="https://i.namu.wiki/i/oVZBbjatvm1sYvaSwgUi7A4qorexudjtbSt18vF3ZcqU5O-ENUM9jkphH3XHK6vpbqm8fAvDWvJMZn2q1TCsCg.webp"
+                      />
+                      <div class="recipe-content-box">
+                        <div class="recipe-star-box">
+                          <div class="recipe-star-fill">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="recipe-star-base">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <span class="rcipe-content">곰탕</span>
+                        <div class="recipe-like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="21"
+                            fill="currentColor"
+                            class="bi bi-bookmark-heart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"
+                            />
+                            <path
+                              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                            />
+                          </svg>
+                          <span class="recipe-like-number">7</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="recipe-item">
+                      <img
+                        src="https://recipe1.ezmember.co.kr/cache/recipe/2015/07/08/c1fd0dd5ed63d54e8524c2b976e88e1d.jpg"
+                      />
+                      <div class="recipe-content-box">
+                        <div class="recipe-star-box">
+                          <div class="recipe-star-fill">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="recipe-star-base">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <span class="rcipe-content">단호박 가지 탕수육</span>
+                        <div class="recipe-like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="21"
+                            fill="currentColor"
+                            class="bi bi-bookmark-heart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"
+                            />
+                            <path
+                              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                            />
+                          </svg>
+                          <span class="recipe-like-number">7</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="recipe-winter-box">
+                  <div class="recipe-item-first-line">
+                    <div class="recipe-item">
+                      <img
+                        src="https://recipe1.ezmember.co.kr/cache/recipe/2022/06/05/3f78196b950561b0fd6eb0fc09a7265a1.jpg"
+                      />
+                      <div class="recipe-content-box">
+                        <div class="recipe-star-box">
+                          <div class="recipe-star-fill">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="recipe-star-base">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <span class="rcipe-content">토마토 수프</span>
+                        <div class="recipe-like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="21"
+                            fill="currentColor"
+                            class="bi bi-bookmark-heart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"
+                            />
+                            <path
+                              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                            />
+                          </svg>
+                          <span class="recipe-like-number">7</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="recipe-item">
+                      <img
+                        src="https://recipe1.ezmember.co.kr/cache/recipe/2020/09/06/ee00d6e59def943bc0eb0354fb58a00d1.jpg"
+                      />
+                      <div class="recipe-content-box">
+                        <div class="recipe-star-box">
+                          <div class="recipe-star-fill">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="recipe-star-base">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <span class="rcipe-content">베트남 쌀국수</span>
+                        <div class="recipe-like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="21"
+                            fill="currentColor"
+                            class="bi bi-bookmark-heart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"
+                            />
+                            <path
+                              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                            />
+                          </svg>
+                          <span class="recipe-like-number">7</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="recipe-item">
+                      <img
+                        src="https://i.namu.wiki/i/lKYfRjq36cpG-VHTZpjqIZPdnVEFJAntGQJ8H2K9QcgmoWoRHIp0aUQw08m6StCzCZAW3K7vTLDpQkB3n996jg.webp"
+                      />
+                      <div class="recipe-content-box">
+                        <div class="recipe-star-box">
+                          <div class="recipe-star-fill">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="recipe-star-base">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <span class="rcipe-content">칠리 콘 카르네</span>
+                        <div class="recipe-like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="21"
+                            fill="currentColor"
+                            class="bi bi-bookmark-heart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"
+                            />
+                            <path
+                              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                            />
+                          </svg>
+                          <span class="recipe-like-number">7</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="recipe-item-second-line">
+                    <div class="recipe-item">
+                      <img
+                        src="https://i.namu.wiki/i/Ni7XpClHeRIcHn31TU5uanomCAmT0YcgV3GuOUGNdW1Td6UpW79EzpSCI7aW2NvzaZHAEIzKvGijmPPluC4qIw.webp"
+                      />
+                      <div class="recipe-content-box">
+                        <div class="recipe-star-box">
+                          <div class="recipe-star-fill">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="recipe-star-base">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <span class="rcipe-content">부대찌개</span>
+                        <div class="recipe-like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="21"
+                            fill="currentColor"
+                            class="bi bi-bookmark-heart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"
+                            />
+                            <path
+                              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                            />
+                          </svg>
+                          <span class="recipe-like-number">7</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="recipe-item">
+                      <img
+                        src="https://static.wtable.co.kr/image/production/service/recipe/1003/39239dda-0d91-43d5-a0ea-133d0065df52.jpg?size=800x800"
+                      />
+                      <div class="recipe-content-box">
+                        <div class="recipe-star-box">
+                          <div class="recipe-star-fill">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="recipe-star-base">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <span class="rcipe-content">만두국</span>
+                        <div class="recipe-like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="21"
+                            fill="currentColor"
+                            class="bi bi-bookmark-heart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"
+                            />
+                            <path
+                              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                            />
+                          </svg>
+                          <span class="recipe-like-number">7</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="recipe-item">
+                      <img
+                        src="https://static.wtable.co.kr/image/production/service/recipe/2169/912b2554-7a01-4394-a6f2-136c91538169.jpg?size=800x800"
+                      />
+                      <div class="recipe-content-box">
+                        <div class="recipe-star-box">
+                          <div class="recipe-star-fill">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="recipe-star-base">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <span class="rcipe-content">떡국</span>
+                        <div class="recipe-like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="21"
+                            fill="currentColor"
+                            class="bi bi-bookmark-heart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"
+                            />
+                            <path
+                              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                            />
+                          </svg>
+                          <span class="recipe-like-number">7</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="weather-dashboard">
+          <div class="dashboard-title">
+            <div>DASHBOARD</div>
+          </div>
+          <div class="dashboard-category-wrap">
+            <div class="dashboard-category-item">
+              <div class="category-left-bar"></div>
+              <div class="category-right-item">
+                <div class="category-right-item-main-content-box">
+                  <div class="category-right-item-main-content">
+                    <div class="category-right-item-main-content-title">
+                      시즌 음악
+                    </div>
+                    <div class="category-right-item-main-content-icon">
+                      <svg
+                        style="color: #9f70fd"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="currentColor"
+                        class="bi bi-music-note-beamed"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13s1.12-2 2.5-2 2.5.896 2.5 2m9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          d="M14 11V2h1v9zM6 3v10H5V3z"
+                        />
+                        <path
+                          d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="category-right-item-sub-content-box">
+                  <span class="category-right-item-sub-content"></span>
+                </div>
+              </div>
+            </div>
+            <div class="dashboard-category-item">
+              <div class="category-left-bar"></div>
+              <div class="category-right-item">
+                <div class="category-right-item-main-content-box">
+                  <div class="category-right-item-main-content">
+                    <div class="category-right-item-main-content-title">
+                      시즌 패션트랜드
+                    </div>
+                    <div class="category-right-item-main-content-icon">
+                      <svg
+                        style="color: #f72798"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="currentColor"
+                        class="bi bi-award"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"
+                        />
+                        <path
+                          d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="category-right-item-sub-content-box">
+                  <span class="category-right-item-sub-content"></span>
+                </div>
+              </div>
+            </div>
+            <div class="dashboard-category-item">
+              <div class="category-left-bar"></div>
+              <div class="category-right-item">
+                <div class="category-right-item-main-content-box">
+                  <div class="category-right-item-main-content">
+                    <div class="category-right-item-main-content-title">
+                      시즌 여행지 추천
+                    </div>
+                    <div class="category-right-item-main-content-icon">
+                      <svg
+                        style="color: #387adf"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="currentColor"
+                        class="bi bi-airplane"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1s-.458.158-.678.599"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="category-right-item-sub-content-box">
+                  <span class="category-right-item-sub-content"></span>
+                </div>
+              </div>
+            </div>
+            <div class="dashboard-category-item">
+              <div class="category-left-bar"></div>
+              <div class="category-right-item">
+                <div class="category-right-item-main-content-box">
+                  <div class="category-right-item-main-content">
+                    <div class="category-right-item-main-content-title">
+                      시즌 운동 가이드
+                    </div>
+                    <div class="category-right-item-main-content-icon">
+                      <svg
+                        style="color: #f57d1f"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="currentColor"
+                        class="bi bi-person-walking"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M9.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M6.44 3.752A.75.75 0 0 1 7 3.5h1.445c.742 0 1.32.643 1.243 1.38l-.43 4.083a1.8 1.8 0 0 1-.088.395l-.318.906.213.242a.8.8 0 0 1 .114.175l2 4.25a.75.75 0 1 1-1.357.638l-1.956-4.154-1.68-1.921A.75.75 0 0 1 6 8.96l.138-2.613-.435.489-.464 2.786a.75.75 0 1 1-1.48-.246l.5-3a.75.75 0 0 1 .18-.375l2-2.25Z"
+                        />
+                        <path
+                          d="M6.25 11.745v-1.418l1.204 1.375.261.524a.8.8 0 0 1-.12.231l-2.5 3.25a.75.75 0 1 1-1.19-.914zm4.22-4.215-.494-.494.205-1.843.006-.067 1.124 1.124h1.44a.75.75 0 0 1 0 1.5H11a.75.75 0 0 1-.531-.22Z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="category-right-item-sub-content-box">
+                  <span class="category-right-item-sub-content"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-stat-wrap">
+            <div class="stat-season">
+              <div class="stat-season-title"><h2>계절 선호도</h2></div>
+              <div class="stat-season-item-box">
+                <div class="stat-season-item-bar">
+                  <div class="stat-season-item">
+                    <div class="stat-season-item-season-title">봄</div>
+                    <div class="stat-season-item-season-percent">25%</div>
+                  </div>
+                  <div class="stat-season-item">
+                    <div class="stat-season-item-season-title">여름</div>
+                    <div class="stat-season-item-season-percent">50%</div>
+                  </div>
+                  <div class="stat-season-item">
+                    <div class="stat-season-item-season-title">가을</div>
+                    <div class="stat-season-item-season-percent">75%</div>
+                  </div>
+                  <div class="stat-season-item">
+                    <div class="stat-season-item-season-title">겨울</div>
+                    <div class="stat-season-item-season-percent">100%</div>
+                  </div>
+                  <div class="stat-season-item-name first">100%</div>
+                  <div class="stat-season-item-name second">75%</div>
+                  <div class="stat-season-item-name three">50%</div>
+                  <div class="stat-season-item-name four">25%</div>
+                  <div class="stat-season-item-name five">0%</div>
+                  <div class="stat-season-item-sub-bar first"></div>
+                  <div class="stat-season-item-sub-bar second"></div>
+                  <div class="stat-season-item-sub-bar three"></div>
+                  <div class="stat-season-item-sub-bar four"></div>
+                  <div class="stat-season-item-sub-bar five"></div>
+                </div>
+              </div>
+            </div>
+            <div class="stat-travel">
+              <div class="stat-title">
+                <div><h2>액티비티 TOP5</h2></div>
+              </div>
+              <div class="stat-title-dropmenu">
+                <div class="triangle-down"></div>
+                <div class="dropmenu-content"></div>
+                <div class="dropmenu-sub-content first">
+                  <div>Spring</div>
+                </div>
+                <div class="dropmenu-sub-content second">
+                  <div>Summer</div>
+                </div>
+                <div class="dropmenu-sub-content three">
+                  <div>Autumn</div>
+                </div>
+                <div class="dropmenu-sub-content">
+                  <div>Winter</div>
+                </div>
+              </div>
+              <div class="stat-season-item-box">
+                <div class="stat-season-item-bar">
+                  <div class="stat-season-activity-item">
+                    <div class="stat-season-activity-item-title">봄</div>
+                    <div class="stat-season-activity-item-percent">25%</div>
+                  </div>
+                  <div class="stat-season-activity-item">
+                    <div class="stat-season-activity-item-title">여름</div>
+                    <div class="stat-season-activity-item-percent">50%</div>
+                  </div>
+                  <div class="stat-season-activity-item">
+                    <div class="stat-season-activity-item-title">가을</div>
+                    <div class="stat-season-activity-item-percent">75%</div>
+                  </div>
+                  <div class="stat-season-activity-item">
+                    <div class="stat-season-activity-item-title">겨울</div>
+                    <div class="stat-season-activity-item-percent">100%</div>
+                  </div>
+                  <div class="stat-season-activity-item">
+                    <div class="stat-season-activity-item-title">겨울</div>
+                    <div class="stat-season-activity-item-percent">100%</div>
+                  </div>
+                  <div class="stat-season-item-name first">100%</div>
+                  <div class="stat-season-item-name second">75%</div>
+                  <div class="stat-season-item-name three">50%</div>
+                  <div class="stat-season-item-name four">25%</div>
+                  <div class="stat-season-item-name five">0%</div>
+                  <div class="stat-season-item-sub-bar first"></div>
+                  <div class="stat-season-item-sub-bar second"></div>
+                  <div class="stat-season-item-sub-bar three"></div>
+                  <div class="stat-season-item-sub-bar four"></div>
+                  <div class="stat-season-item-sub-bar five"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="weather-foot">
+          <div class="weather-foot-wrap">
+            <div class="weather-foot-log-box">
+              <div class="weather-foot-log-title">
+                <h1><span>ICE</span>TIP</h1>
+              </div>
+              <div class="weather-foot-log-content">
+                ICETIP는 계절의 변화에 맞춰 당신에게 필요한 정보를 제공합니다.
+                우리는 여러분이 시간을 효율적으로 활용할 수 있도록, 최신 계절
+                이벤트, 맛있는 시즌 음식, 그리고 트렌디한 시즌 패션을
+                소개합니다. ICETIP와 함께라면 언제나 계절에 맞는 최고의 선택을
+                할 수 있습니다.
+              </div>
+              <div class="weather-foot-call">
+                <div class="weather-foot-call-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-telephone-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+                    />
+                  </svg>
+                </div>
+                <div class="weather-foot-call-number">010-1234-5678</div>
+              </div>
+              <div class="weather-foot-message">
+                <div class="weather-foot-message-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-envelope-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"
+                    />
+                  </svg>
+                </div>
+                <div class="weather-foot-message-content">info@gmail.com</div>
+              </div>
+              <div class="weather-foot-etc-icon">
+                <div class="weather-foot-etc-instargram">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-instagram"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                    />
+                  </svg>
+                </div>
+                <div class="weather-foot-etc-facebook">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-facebook"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                    />
+                  </svg>
+                </div>
+                <div class="weather-foot-etc-twitter">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-twitter"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"
+                    />
+                  </svg>
+                </div>
+                <div class="weather-foot-etc-discord">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-discord"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="weather-foot-quick-box">
+              <div class="weather-foot-quick-title">
+                <h1>QUICK LINKS</h1>
+              </div>
+              <div class="weather-foot-quick-links">
+                <ul>
+                  <li>Event</li>
+                  <li>News</li>
+                  <li>Story</li>
+                  <li>Recipe</li>
+                  <li>Dashboard</li>
+                </ul>
+              </div>
+            </div>
+            <div class="weather-foot-contact-box">
+              <div class="weather-foot-contact-title">
+                <h1>Contact US</h1>
+              </div>
+              <div class="weather-foot-contact-input-box">
+                <input placeholder="이메일" type="text" />
+                <textarea placeholder="Message..."></textarea>
+                <div>
+                  <div>
+                    <svg
+                      style="font-weight: 700"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-send"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"
+                      />
+                    </svg>
+                    <div>Send</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="weather-foot-made-box">
+          <div class="weather-foot-made-text">
+            ©Coding HTML&CSS&JS | Made By Lee
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script type="module" src="/Login/js/WeatherMain.js"></script>
+</html>
